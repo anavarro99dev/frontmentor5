@@ -1,0 +1,32 @@
+@function rem($size) {
+    @return $size / 16px * 1rem;
+}
+
+@mixin guia($color, $level) {
+    $opciones: (
+        "1": rem(3px) solid,
+        "2": rem(2px) dashed,
+        "3": rem(1px) solid,
+    );
+    border: $color map-get($opciones, quote($level) );
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+@mixin media {
+    @media screen and(max-width: rem(680px)) {
+        @content;
+    }
+}

@@ -1,0 +1,16 @@
+@import "utilidades";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Red+Hat+Display:wght@500&display=swap');
+
+$Very_Dark_Magenta: hsl(300, 43%, 22%);
+$Soft_Pink: hsl(333, 80%, 67%);
+
+$Dark_Grayish_Magenta: hsl(303, 10%, 53%);
+$Light_Grayish_Magenta: hsl(300, 24%, 96%);
+$White: hsl(0, 0%, 100%);
+
+body{
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400, 500, 700; 
+}
