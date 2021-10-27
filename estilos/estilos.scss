@@ -4,3 +4,60 @@
 @import "utilidades";
 @import "guias";
 @import "media";
+
+.star {
+  width: rem(125px);
+  height: rem(24px);
+
+  $start: url(/images/icon-star.svg);
+  $fivestart: $start, $start, $start, $start, $start;
+  $start_position: rem(0px), rem(1 * 25px), rem(2 * 25px), rem(3 * 25px),
+    rem(4 * 25px);
+
+  background-image: $fivestart;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: $start_position;
+
+  display: inline-block;
+}
+
+.align-left {
+  justify-self: left;
+  align-self: flex-start;
+}
+.align-center {
+  justify-self: center;
+  align-self: center;
+}
+.align-right {
+  justify-self: right;
+  align-self: flex-end;
+}
+
+ul#stat {
+  li {
+    @extend .flex-center;
+    justify-content: start;
+    flex-wrap: nowrap;
+
+    width: 80%;
+    margin: rem(10px) rem(20px);
+    padding: 0 rem(20px);
+
+    & > * {
+      margin: rem(10px) rem(15px);
+    }
+  }
+  @include movil {
+    width: 100%;
+    li {
+      display: block;
+      width: auto;
+    }
+  }
+}
+
+ul#person {
+
+}
