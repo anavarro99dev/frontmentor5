@@ -19,13 +19,6 @@
       flex-wrap: wrap;
 }
 
-@media screen and (max-width: 42.5rem) {
-  .flex, .flex-center {
-    display: block;
-    text-align: center;
-  }
-}
-
 .flex-row {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -52,8 +45,8 @@
 
 body {
   font-size: 15px;
-  font-family: 'Inter', sans-serif;
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
   font-weight: 400, 500, 700;
 }
 
@@ -61,18 +54,6 @@ ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-@media screen and (max-width: 42.5rem) {
-  div, ul, li {
-    margin: 0.9375rem 0;
-  }
-}
-
-@media screen and (max-width: 42.5rem) {
-  main {
-    margin: 0 0.9375rem;
-  }
 }
 
 .flex {
@@ -93,13 +74,6 @@ ul {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-@media screen and (max-width: 42.5rem) {
-  .flex, .flex-center {
-    display: block;
-    text-align: center;
-  }
 }
 
 .flex-row {
@@ -124,6 +98,72 @@ ul {
 .width-50 {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-row {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-col {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.width-all {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.width-50 {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+@media screen and (max-width: 42.5rem) {
+  .flex,
+  .flex-center {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 42.5rem) {
+  div,
+  ul,
+  li {
+    margin: 0.9375rem 0;
+  }
+}
+
+@media screen and (max-width: 42.5rem) {
+  main {
+    margin: 0 0.9375rem;
+  }
 }
 
 footer {
@@ -252,13 +292,6 @@ select {
       flex-wrap: wrap;
 }
 
-@media screen and (max-width: 42.5rem) {
-  .flex, .flex-center {
-    display: block;
-    text-align: center;
-  }
-}
-
 .flex-row {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -303,11 +336,98 @@ select {
       flex-wrap: wrap;
 }
 
+.flex-row {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-col {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.width-all {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.width-50 {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
 @media screen and (max-width: 42.5rem) {
-  .flex, .flex-center {
+  .flex,
+  .flex-center {
     display: block;
     text-align: center;
   }
+}
+
+@media screen and (max-width: 42.5rem) {
+  div,
+  ul,
+  li {
+    margin: 0.9375rem 0;
+  }
+}
+
+@media screen and (max-width: 42.5rem) {
+  main {
+    margin: 0 0.9375rem;
+  }
+}
+
+body {
+  border: black 0.1875rem solid;
+}
+
+main,
+div,
+ul {
+  border: blue 0.1875rem solid;
+}
+
+li {
+  border: green 0.125rem dashed;
+}
+
+@media screen and (max-width: 42.5rem) {
+  body {
+    border: black 0.1875rem solid;
+  }
+  main,
+  div,
+  ul {
+    border: blue 0.1875rem solid;
+  }
+  li {
+    border: green 0.125rem dashed;
+  }
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .flex-row {
@@ -334,27 +454,25 @@ select {
       flex-basis: 50%;
 }
 
-body {
-  border: black 0.1875rem solid;
-}
-
-main, div, ul {
-  border: blue 0.1875rem solid;
-}
-
-li {
-  border: green 0.125rem dashed;
+@media screen and (max-width: 42.5rem) {
+  .flex,
+  .flex-center {
+    display: block;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 42.5rem) {
-  body {
-    border: black 0.1875rem solid;
-  }
-  main, div, ul {
-    border: blue 0.1875rem solid;
-  }
+  div,
+  ul,
   li {
-    border: green 0.125rem dashed;
+    margin: 0.9375rem 0;
+  }
+}
+
+@media screen and (max-width: 42.5rem) {
+  main {
+    margin: 0 0.9375rem;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
