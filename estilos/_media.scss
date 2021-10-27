@@ -1,0 +1,23 @@
+@mixin movil {
+    @media screen and(min-width: rem(680px)) {
+        @content;
+    }
+}
+
+.flex, .flex-center{
+    @include movil{
+        display: block;
+        text-align: center;
+    }
+}
+
+div, ul, li{
+    @include movil{
+        margin: rem(15px) 0;
+    }
+}
+main{
+    @include movil{
+        margin: 0 rem(15px);
+    }
+}
