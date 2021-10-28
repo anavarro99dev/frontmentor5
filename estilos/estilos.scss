@@ -25,7 +25,7 @@ div#text {
   width: rem(125px);
   height: rem(18px);
 
-  $start: url(/images/icon-star.svg);
+  $start: url(../images/icon-star.svg);
   $fivestart: $start, $start, $start, $start, $start;
   $start_position: rem(0px), rem(1 * 25px), rem(2 * 25px), rem(3 * 25px),
     rem(4 * 25px);
