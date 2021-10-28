@@ -2,6 +2,14 @@
     @return $size / 16px * 1rem;
 }
 
+@function vw($size) {
+    @return 1366px/100 * $size/1vw;
+}
+
+@function vh($size) {
+    @return 1366px/100 * $size/1vh;
+}
+
 .flex{
     display: flex;
 }
@@ -30,5 +38,5 @@
 }
 
 .width-col2{
-    width: 30%;
+    width: 40%;
 }

@@ -5,6 +5,11 @@
 @import "guias";
 @import "media";
 
+div#text{
+  justify-self: start;
+  align-self: flex-start;
+}
+
 .star {
   width: rem(125px);
   height: rem(24px);
@@ -35,6 +40,16 @@
   align-self: flex-end;
 }
 
+.align-top {
+  // justify-self: left;
+  // align-self: flex-start;
+}
+
+.align-bottom {
+  // justify-self: right;
+  // align-self: flex-end;
+}
+
 ul#stat {
   li {
     @extend .flex-center;
@@ -59,14 +74,19 @@ ul#stat {
 }
 
 ul#person {
+  align-content: space-between;
+  justify-content: space-between;
+  min-height: vh(18vh);
   li{
+    width: 32%;
+    height: max-content;
+
     display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: auto auto auto;
+    grid-template-rows: max-content max-content max-content;
+    grid-template-columns: rem(80px) auto auto;
     img{
       grid-row-start: 1;
       grid-row-end: span 2;
-      justify-self: center;
     }
     h3{
       grid-column-start: 2;
@@ -75,9 +95,10 @@ ul#person {
     p{
       grid-row-start: 3;
       grid-column-start: span 3; 
-      margin-left: rem(18px);
     }
-    padding: rem(25px);
-
+    // padding: rem(25px);
+  }
+  @include movil{
+    text-align: initial;
   }
 }

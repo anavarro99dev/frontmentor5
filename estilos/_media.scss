@@ -1,7 +1,7 @@
 @import "utilidades";
 
 @mixin movil {
-  @media screen and (max-width: rem(680px)) {
+  @media screen and (max-width: rem(750px)) {
     @content;
   }
 }
@@ -42,6 +42,7 @@ li {
 
 main {
   @include movil {
+    width: auto;
     margin: 0 rem(15px);
   }
 }

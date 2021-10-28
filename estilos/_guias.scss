@@ -34,7 +34,7 @@
 ul#person {
   @include guia(black, 1);
   li {
-    @include guia(blue, 3);
+    @include guia(blue, 1);
   }
   li > * {
     @include guia(green, 2);
