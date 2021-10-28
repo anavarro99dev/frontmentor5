@@ -432,15 +432,17 @@ select {
   }
 }
 
-ul#person {
+body {
   border: black 0.1875rem solid;
 }
 
-ul#person li {
+main,
+div,
+ul {
   border: blue 0.1875rem solid;
 }
 
-ul#person li > * {
+li {
   border: green 0.125rem dashed;
 }
 
@@ -590,7 +592,7 @@ ul#stat li {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   width: 80%;
-  margin: 0.625rem 1.25rem;
+  margin: 0.625rem 0rem;
   padding: 0 1.25rem;
 }
 
