@@ -5,9 +5,12 @@
 @import "guias";
 @import "media";
 
-div#text{
-  justify-self: center;
-  // align-self: flex-start;
+div#text {
+  h1 {
+    font-size: rem(52px);
+    line-height: 1;
+    margin-bottom: rem(10px);
+  }
 }
 
 .star {
@@ -55,7 +58,7 @@ ul#stat {
 
     & > * {
       margin: rem(10px) rem(15px);
-      @include movil{
+      @include movil {
         margin: auto;
       }
     }
@@ -73,29 +76,29 @@ ul#person {
   align-content: space-between;
   justify-content: space-between;
   min-height: vh(25vh);
-  li{
+  li {
     width: 32%;
     height: max-content;
 
     display: grid;
     grid-template-rows: max-content max-content max-content;
     grid-template-columns: rem(80px) auto auto;
-    img{
+    img {
       grid-row-start: 1;
       grid-row-end: span 2;
     }
-    h3{
+    h3 {
       grid-column-start: 2;
       grid-column-end: span 2;
     }
-    p{
+    p {
       grid-row-start: 3;
-      grid-column-start: span 3; 
+      grid-column-start: span 3;
     }
   }
-  @include movil{
+  @include movil {
     text-align: initial;
-    li{
+    li {
       width: 100%;
     }
   }
