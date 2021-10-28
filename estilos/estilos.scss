@@ -6,8 +6,8 @@
 @import "media";
 
 div#text{
-  justify-self: start;
-  align-self: flex-start;
+  justify-self: center;
+  // align-self: flex-start;
 }
 
 .star {
@@ -40,17 +40,10 @@ div#text{
   align-self: flex-end;
 }
 
-.align-top {
-  // justify-self: left;
-  // align-self: flex-start;
-}
-
-.align-bottom {
-  // justify-self: right;
-  // align-self: flex-end;
-}
-
 ul#stat {
+  justify-self: center;
+  // align-self: center;
+
   li {
     @extend .flex-center;
     justify-content: start;
@@ -62,6 +55,9 @@ ul#stat {
 
     & > * {
       margin: rem(10px) rem(15px);
+      @include movil{
+        margin: auto;
+      }
     }
   }
   @include movil {
@@ -76,7 +72,7 @@ ul#stat {
 ul#person {
   align-content: space-between;
   justify-content: space-between;
-  min-height: vh(18vh);
+  min-height: vh(25vh);
   li{
     width: 32%;
     height: max-content;

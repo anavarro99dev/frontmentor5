@@ -42,7 +42,7 @@
 }
 
 .width-col2 {
-  width: 40%;
+  width: 35%;
 }
 
 body {
@@ -59,7 +59,15 @@ ul {
 }
 
 main {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   max-width: 1161.1px;
+  min-height: 459.6px;
 }
 
 .flex {
@@ -105,7 +113,7 @@ main {
 }
 
 .width-col2 {
-  width: 40%;
+  width: 35%;
 }
 
 .flex {
@@ -151,7 +159,7 @@ main {
 }
 
 .width-col2 {
-  width: 40%;
+  width: 35%;
 }
 
 @media screen and (max-width: 46.875rem) {
@@ -343,7 +351,7 @@ select {
 }
 
 .width-col2 {
-  width: 40%;
+  width: 35%;
 }
 
 .flex {
@@ -389,7 +397,7 @@ select {
 }
 
 .width-col2 {
-  width: 40%;
+  width: 35%;
 }
 
 @media screen and (max-width: 46.875rem) {
@@ -503,7 +511,7 @@ li {
 }
 
 .width-col2 {
-  width: 40%;
+  width: 35%;
 }
 
 @media screen and (max-width: 46.875rem) {
@@ -547,10 +555,8 @@ li {
 }
 
 div#text {
-  -ms-grid-column-align: start;
-      justify-self: start;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .star {
@@ -585,6 +591,11 @@ div#text {
       align-self: flex-end;
 }
 
+ul#stat {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
 ul#stat li {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -598,6 +609,12 @@ ul#stat li {
 
 ul#stat li > * {
   margin: 0.625rem 0.9375rem;
+}
+
+@media screen and (max-width: 46.875rem) {
+  ul#stat li > * {
+    margin: auto;
+  }
 }
 
 @media screen and (max-width: 46.875rem) {
@@ -616,7 +633,7 @@ ul#person {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 245.88px;
+  min-height: 191.5px;
 }
 
 ul#person li {

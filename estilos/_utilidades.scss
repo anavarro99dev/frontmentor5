@@ -7,7 +7,7 @@
 }
 
 @function vh($size) {
-    @return 1366px/100 * $size/1vh;
+    @return 766px/100 * $size/1vh;
 }
 
 .flex{
@@ -38,5 +38,5 @@
 }
 
 .width-col2{
-    width: 40%;
+    width: 35%;
 }
