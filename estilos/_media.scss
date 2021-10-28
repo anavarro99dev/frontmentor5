@@ -14,20 +14,20 @@
   }
 }
 
-.width-all{
-  @include movil{
+.width-all {
+  @include movil {
     width: 100%;
   }
 }
 
-.width-col1{
-  @include movil{
+.width-col1 {
+  @include movil {
     width: 100%;
   }
 }
 
-.width-col2{
-  @include movil{
+.width-col2 {
+  @include movil {
     width: 100%;
   }
 }

@@ -10,6 +10,9 @@ div#text {
     font-size: rem(52px);
     line-height: 1;
     margin-bottom: rem(10px);
+    @include movil{
+      font-size: rem(36px);
+    }
   }
 }
 
@@ -44,8 +47,7 @@ div#text {
 }
 
 ul#stat {
-  justify-self: center;
-  // align-self: center;
+
 
   li {
     @extend .flex-center;

@@ -50,6 +50,7 @@ body {
   font-family: "Inter", sans-serif;
   font-family: "Red Hat Display", sans-serif;
   font-weight: 400, 500, 700;
+  background-color: white;
 }
 
 ul {
@@ -67,7 +68,7 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 1161.1px;
-  min-height: 536.2px;
+  min-height: 482.58px;
 }
 
 .flex {
@@ -560,6 +561,12 @@ div#text h1 {
   margin-bottom: 0.625rem;
 }
 
+@media screen and (max-width: 46.875rem) {
+  div#text h1 {
+    font-size: 2.25rem;
+  }
+}
+
 .star {
   width: 7.8125rem;
   height: 1.5rem;
@@ -590,11 +597,6 @@ div#text h1 {
       justify-self: right;
   -ms-flex-item-align: end;
       align-self: flex-end;
-}
-
-ul#stat {
-  -ms-grid-column-align: center;
-      justify-self: center;
 }
 
 ul#stat li {
