@@ -1,13 +1,13 @@
 @function rem($size) {
-    @return $size / 16px * 1rem;
+    @return $size *  1rem/16px;
 }
 
 @function vw($size) {
-    @return 1366px/100 * $size/1vw;
+    @return 1366px/100 * $size/1vw * 1rem/16px;
 }
 
 @function vh($size) {
-    @return 766px/100 * $size/1vh;
+    @return 766px/100 * $size/1vh  * 1rem/16px;
 }
 
 .flex{
