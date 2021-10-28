@@ -656,5 +656,8 @@ ul#person li p {
   ul#person {
     text-align: initial;
   }
+  ul#person li {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */
