@@ -1,4 +1,4 @@
-@import 'utilidades';
+@import "utilidades";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Red+Hat+Display:wght@500&display=swap");
 
 $Very_Dark_Magenta: hsl(300, 43%, 22%);
@@ -15,7 +15,12 @@ body {
   font-weight: 400, 500, 700;
 
   background-color: $White;
-  // background-image: url(/images/bg-pattern-bottom-desktop.svg);
+  background-image: url(/images/bg-pattern-top-desktop.svg),
+    url(/images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position-x: rem(-900px), rem(350px);
+  background-position-y: top, bottom;
 }
 
 ul {
@@ -24,10 +29,14 @@ ul {
   list-style-type: none;
 }
 
-main{
+main {
   flex-wrap: wrap;
   align-content: space-between;
   justify-content: space-between;
   max-width: vw(85vw);
-  min-height: vh(63vh);
+  min-height: vh(80vh);
+}
+
+h3{
+  font-size: rem(15px);
 }
