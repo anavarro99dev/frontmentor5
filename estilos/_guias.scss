@@ -21,7 +21,17 @@
 //   @include guia(green, 2);
 // }
 
-ul#stat {
+// ul#stat {
+//   @include guia(black, 1);
+//   li {
+//     @include guia(blue, 3);
+//   }
+//   li > * {
+//     @include guia(green, 2);
+//   }
+// }
+
+ul#person {
   @include guia(black, 1);
   li {
     @include guia(blue, 3);

@@ -426,15 +426,15 @@ select {
   }
 }
 
-ul#stat {
+ul#person {
   border: black 0.1875rem solid;
 }
 
-ul#stat li {
+ul#person li {
   border: blue 0.0625rem solid;
 }
 
-ul#stat li > * {
+ul#person li > * {
   border: green 0.125rem dashed;
 }
 
@@ -592,5 +592,39 @@ ul#stat li > * {
     display: block;
     width: auto;
   }
+}
+
+ul#person li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  padding: 1.5625rem;
+}
+
+ul#person li img {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-row-span: 2;
+      grid-row-end: span 2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+ul#person li h3 {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+}
+
+ul#person li p {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  -ms-grid-column: span 3;
+      grid-column-start: span 3;
+  margin-left: 1.125rem;
 }
 /*# sourceMappingURL=estilos.css.map */

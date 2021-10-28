@@ -59,5 +59,25 @@ ul#stat {
 }
 
 ul#person {
+  li{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
+    img{
+      grid-row-start: 1;
+      grid-row-end: span 2;
+      justify-self: center;
+    }
+    h3{
+      grid-column-start: 2;
+      grid-column-end: span 2;
+    }
+    p{
+      grid-row-start: 3;
+      grid-column-start: span 3; 
+      margin-left: rem(18px);
+    }
+    padding: rem(25px);
 
+  }
 }
